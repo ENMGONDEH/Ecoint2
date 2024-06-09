@@ -1,0 +1,116 @@
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-weight: bold;
+}
+
+#container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background: #1e1e1e;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+#coin-container {
+    margin: 20px 0;
+}
+
+#coinButton {
+    width: 150px;
+    height: 150px;
+    background: url('https://enmgondeh.github.io/Ecoin1t/') no-repeat center center;
+    background-size: cover;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    transition: transform 0.1s;
+}
+
+#coinButton:active {
+    transform: scale(0.9);
+}
+
+#info {
+    display: flex;
+    justify-content: space-between 
+    margin: 20px;
+    font-size: 1.5rem;
+}
+
+#coins {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 2rem;
+    animation: increaseCoins 0.5s;
+}
+
+#rate {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1rem;
+}
+
+#upgradeMenuButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #333333;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#upgradeMenuButton:hover {
+    background-color: #555555;
+}
+
+#upgradeMenu {
+    display: none;
+    margin-top: 20px;
+    border: 1px solid #ffffff;
+    padding: 20px;
+    background: #1e1e1e;
+    border-radius: 10px;
+}
+
+.upgrade-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.upgradeButton {
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: #333333;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.upgradeButton:hover {
+    background-color: #555555;
+}
+
+@keyframes increaseCoins {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
